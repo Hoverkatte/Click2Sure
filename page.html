@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Click2Sure - Assessment</title>
+        <script src="https://kit.fontawesome.com/17b06c715d.js" crossorigin="anonymous"></script>
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+        </style>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="menu-slot">
+            <h1>Test User - Accounts</h1>
+        </div>
+        <section class="full-page">
+            <div class="inner-center float-box">
+                <div class="top-bar">
+                    Summary
+                    <div class="new-account-btn btn float-right">
+                        Add New Account
+                    </div>
+                </div>
+                <div class="table-struct">
+                    <div class="table-struct-head">
+                        <div class="table-struct-th">
+                            TYPE
+                        </div>
+                        <div class="table-struct-th">
+                            ID
+                        </div>
+                        <div class="table-struct-th">
+                            BALANCE
+                        </div>
+                        <div class="table-struct-th blank"></div>
+                        <div class="table-struct-th blank"></div>
+                    </div>
+                    <div class="table-struct-body height-scroll main-ctn">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal-overlay"></div>
+        <div data-n="new-account" class="modal-box inner-center">
+            <div class="modal-top-bar">
+                New Account
+                <div class="modal-btn modal-close-btn float-right">
+                    <i class="fa fa-times inner-center"></i>
+                </div>
+            </div>
+            <div class="inner-ctn">
+                <div class="add-account-btn btn" data-t="savings">
+                    Savings Account
+                </div>
+                <div class="add-account-btn btn" data-t="cheque">
+                    Cheque Account
+                </div>
+            </div>
+        </div>
+        <div data-n="withdraw" class="modal-box inner-center">
+            <div class="modal-top-bar">
+                Withdraw
+                <div class="modal-btn modal-close-btn float-right">
+                    <i class="fa fa-times inner-center"></i>
+                </div>
+            </div>
+            <div class="inner-ctn">
+                <input class="withdraw-input" type="number" />
+            </div>
+            <div class="modal-bot-bar">
+                <div class="modal-btn withdraw-final-btn float-right">
+                    <i class="fa fa-check inner-center"></i>
+                </div>
+            </div>
+        </div>
+        <div data-n="deposit" class="modal-box inner-center">
+            <div class="modal-top-bar">
+                Deposit
+                <div class="modal-btn modal-close-btn float-right">
+                    <i class="fa fa-times inner-center"></i>
+                </div>
+            </div>
+            <div class="inner-ctn">
+                <input class="deposit-input" type="number" />
+            </div>
+            <div class="modal-bot-bar">
+                <div class="modal-btn deposit-final-btn float-right">
+                    <i class="fa fa-check inner-center"></i>
+                </div>
+            </div>
+        </div>
+        <div data-n="history" class="modal-box inner-center">
+            <div class="modal-top-bar">
+                Transaction History
+                <div class="modal-btn modal-close-btn float-right">
+                    <i class="fa fa-times inner-center"></i>
+                </div>
+            </div>
+            <div class="inner-ctn">
+
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

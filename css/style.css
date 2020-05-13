@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-family: 'Raleway';
+    position: relative;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, h7, p {
+    margin: 0;
+}
+
+.inner-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-ctn {
+    position: relative;
+}
+
+.height-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+}
+
+.full-page {
+    margin-top: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.float-right {
+    float: right;
+}
+
+.btn,
+input {
+    outline: none;
+    transition: 0.2s ease;
+    background-color: white;
+    border: 1px solid #228be6;
+    cursor: pointer;
+    color: #228be6;
+    min-width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    line-height: 1;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    cursor: text;
+    text-align: left;
+}
+
+.btn:hover {
+    background-color: #228be6;
+    color: white;
+}
+
+.float-box {
+    min-width: 950px;
+    height: 60%;
+}
+
+.menu-slot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    font-size: 25px;
+    color: white;
+    background-color: #228be6;
+    z-index: 9;
+}
+
+.menu-slot h1 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.top-bar {
+    margin-left: 50px;
+    color: #228be6;
+    font-size: 18px;
+    height: 28px;
+    line-height: 1.6;
+}
+
+.table-struct {
+    padding: 5px 0;
+    height: calc(100% - 58px);
+}
+
+.table-struct-head,
+.table-struct-body {
+    padding-left: 50px;
+}
+
+.table-struct-head {
+    display: flex;
+    margin: 5px 0;
+    padding-top: 5px;
+}
+
+.table-struct-body {
+    height: calc(100% - 30px);
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 50px;
+}
+
+.table-struct-th {
+    background-color: #228be6;
+    flex: 1;
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+    border-right: 1px solid #fff;
+}
+
+.table-struct-th:last-child,
+.table-struct-td:last-child {
+    border-right: 0;
+}
+
+.table-struct-row {
+    position: relative;
+    display: flex;
+    height: 36px;
+    width: calc(100% - 50px);
+}
+
+.table-struct-td {
+    flex: 1;
+    padding: 5px 10px;
+    text-align: center;
+    color: #333;
+    border-right: 1px solid #fff;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(55, 55, 55, 0.7);
+    z-index: 8;
+}
+
+.modal-box {
+    display: none;
+    z-index: 9;
+    min-width: 400px;
+}
+
+.modal-top-bar,
+.modal-bot-bar {
+    padding: 5px 0;
+    color: white;
+    font-size: 18px;
+    height: 28px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.modal-bot-bar {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.modal-btn {
+    width: 28px;
+    height: 28px;
+    background-color: #228be6;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease;
+    color: white;
+}
+
+.modal-btn:hover {
+    background-color: #0b7285;
+}
+
+.modal-close-btn:hover {
+    background-color: #ff0044;
+}
+
+.modal-box > .inner-ctn {
+    background-color: white;
+    padding: 10px;
+}
+
+.modal-box > .inner-ctn .btn {
+    margin-bottom: 10px;
+}
+
+.modal-box > .inner-ctn .btn:last-child {
+    margin-bottom: 0;
+}
+
+.table-row-side-btn {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    bottom: 0;
+    width: 50px;
+    background-color: #228be6;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.table-row-side-btn:hover {
+    background-color: #0b7285;
+}
+
+.modal-box .table-struct-body,
+.modal-box .table-struct-head {
+    padding: 0;
+}
+
+.modal-box .table-struct-row {
+    width: 100%;
+}
+
+.modal-box[data-n="history"] {
+    width: 800px;
+}
+
+/* Opted to use custom divs with flex instead of table. I wanted to make the withdrawal, history and deposit forms slide out with slideToggle underneath the row in the beginning, but decided to follow the wireframe given in the assessment instructions */
+
+/* Wanted to do media queries for max-width: 1000px and downward, but ran out of time */
